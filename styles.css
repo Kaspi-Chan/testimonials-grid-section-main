@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+.page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+    min-height: 100%;
+}
+.main-content{
+    height: 60%;
+    padding: 0 12% 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    width: 100%;
+    position: relative;
+}
+.review-box{
+    border-radius: 10px;
+    color: white;
+    padding: 20px 30px;
+    box-shadow: 55px 35px 99px -33px hsl(0, 0%, 81%);
+}
+.review-box img{
+    border-radius: 50%;
+    width: 28px;
+}
+.person-info{
+    display: flex;
+    align-items: center;
+}
+.credentials{
+    margin-left: 15px;
+}
+.status{
+    display: block;
+    opacity: 50%;
+    font-size: 0.8em;
+}
+.heading-p{
+    padding: 20px 0;
+    font-size: 1.5em;
+    line-height: 1.2;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+}
+.secondary-p{
+    opacity: 70%;
+}
+.Daniel{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 83% top;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.Jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+.Patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+.Kira{
+    color: hsl(219, 29%, 14%);
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+.Jeanette{
+    color: hsl(219, 29%, 14%);
+    grid-column: 1;
+    grid-row: 2;
+}
+.Kira, .Jeanette{
+    background-color: white
+}
+.Patrick img{
+    border: 2px hsl(263, 55%, 52%) solid;
+}
+.Daniel img{
+border: 2px hsl(263, 78%, 66%) solid
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%)
+}
+
+@media (max-width: 1250px) {
+    .main-content{
+        padding: 0 5% 35px;
+    }
+}
+@media (max-width: 960px) {
+    .main-content {
+        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+    }
+}
