@@ -2,11 +2,13 @@
 
 Testimonials grid section exercise provided by Frontend Mentor
 
-Desktop version 1440px width
+My Solution:
+
+-Desktop version 1440px width
 
 ![Desktop](./screenshots/Desktop1440px.png?raw=true)
 
-Mobile version 375px width
+-Mobile version 375px width
 
 ![Mobile](./screenshots/Mobile375px.png?raw=true)
 
